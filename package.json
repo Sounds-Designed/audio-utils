@@ -1,7 +1,7 @@
 {
   "name": "@sounds-designed/audio-utils",
   "description": "A collection of utility functions useful when generating images from audio",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsup src/index.ts",
