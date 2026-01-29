@@ -48,7 +48,6 @@ That's it! You can now use our audio utilities in your Javascript project ✨
 
 </details>
 
-
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/@sounds-designed/audio-utils/latest.svg?style=flat&colorA=020420&colorB=00DC82
 [npm-version-href]: https://npmjs.com/package/@sounds-designed/audio-utils
