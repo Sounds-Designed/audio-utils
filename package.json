@@ -1,0 +1,49 @@
+{
+  "name": "@sounds-designed/audio-utils",
+  "description": "A collection of utility functions useful when generating images from audio",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsup src/index.ts",
+    "lint": "tsc",
+    "release": "npm run lint && npm run build && changelogen --release && npm publish && git push --follow-tags",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest ./test"
+  },
+  "exports": {
+    ".": {
+      "types": [
+        "./types/module.d.ts",
+        "./dist/index.d.mts"
+      ],
+      "import": "./dist/index.mjs"
+    }
+  },
+  "keywords": [],
+  "author": "Alex Scott <codetheorist@outlook.com>",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sounds-Designed/audio-utils.git"
+  },
+  "license": "GPL-3.0-or-later",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@jest/globals": "^30.2.0",
+    "@types/node": "latest",
+    "changelogen": "^0.6.2",
+    "eslint": "^9.39.2",
+    "happy-dom": "^20.0.11",
+    "jest": "^30.2.0",
+    "playwright-core": "^1.57.0",
+    "ts-jest": "^29.4.6",
+    "tsup": "^8.5.1",
+    "typescript": "~5.9.3",
+    "vitest": "^3.2.4"
+  }
+}
